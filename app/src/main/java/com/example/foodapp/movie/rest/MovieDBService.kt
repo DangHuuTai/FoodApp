@@ -12,11 +12,4 @@ interface MovieDBService {
         @Query("page")page : Int,
         @Query("api_key")apiKey : String
     ) : MovieResp
-
-    @GET("movie/top_rated")
-    suspend fun listTopRate(
-        @Query("language")language: String,
-        @Query("page")page: Int,
-        @Query("api_key")apikey : String
-    ) : MovieResp
 }
